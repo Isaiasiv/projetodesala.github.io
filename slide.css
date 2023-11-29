@@ -10,7 +10,7 @@
 /* Estilo da área dos slides */
 #slideshow {
     overflow: hidden;
-    height: 510px;
+    height: 480px;
     width: 728px;
     margin: 0 auto; /* Centraliza o slideshow horizontalmente */
 }
@@ -18,7 +18,7 @@
 /* Estilo de cada slide com largura e altura fixas */
 .slide {
     float: left; /* Alinha os slides à esquerda */
-    height: 510px; /* Define a altura do slide */
+    height: 480px; /* Define a altura do slide */
     width: 728px; /* Define a largura do slide */
 }
 
@@ -39,7 +39,7 @@
 }
 
 .slide:nth-child(2) {
-    background-image: url("https://img.freepik.com/fotos-gratis/foto-de-grande-angular-de-uma-unica-arvore-crescendo-sob-um-ceu-nublado-durante-um-por-do-sol-cercado-por-grama_181624-22807.jpg");
+    background-image: url("imagens/slide/mesa.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

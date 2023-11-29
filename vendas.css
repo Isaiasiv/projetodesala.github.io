@@ -10,6 +10,13 @@
 .corOuro {
     color: #ffd700;
 }
+.corWhite{
+    color: #ffffff;
+}
+.borda_letra {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000000;
+}
 
 .background{
     background-image: url("/imagens/fundo/fundomusic.png");
@@ -156,7 +163,7 @@ section h1{
 .text-cta h4{
     font-size: 3.3rem;
     line-height: 1.2;
-    letter-spacing: .6rem;
+    letter-spacing: .1rem;
     margin-bottom: 30px;
 }
 
@@ -245,12 +252,35 @@ section h1{
 fixarslide {
 
 }
-@media (max-width: 750px) {
+.menuResponsivel {
+    display: none;
+}
+@media (max-width: 800px) {
     fixarslide {
         position: absolute;
         width: 300px;
         height: 100px;
         padding: 2px;
 
+    }
+    .menuResponsivel {
+        display: block;
+    }
+    .menuP {
+        display: none;
+    }
+    .Meio h1{
+        font-size: 30px;
+
+    }
+    .Meio{
+        padding: 4rem 2rem 2rem 1rem;
+        line-height: 3rem;
+    }
+    .cards img {
+        width: 80%;
+    }
+    .text-cta h4 {
+        font-size: 2rem;
     }
 }

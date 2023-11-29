@@ -1,0 +1,81 @@
+
+.ulM {
+    list-style: none;
+    padding: 0;
+    overflow: hidden;
+    transition: all .5s;
+}
+.aM {
+    font-family: sans-serif;
+    text-decoration: none;
+}
+.navM {
+    width: auto;
+    background-color: #362b2b;
+    padding: 0 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+.h1M, .pM {
+    color: white;
+}
+.navM, .ulM {
+    display: flex;
+    flex-direction: row;
+}
+liM pM {
+    margin: 10px 20px; /* Adjust the value as needed */
+}
+
+liM {
+    padding: 0;
+}
+h1M {
+    margin: 0;
+    padding: 10px;
+}
+.buttonM {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 36px;
+    position: absolute;
+    right: 10px;
+    top: 2px;
+    display: none;
+
+}
+.liM:hover, .h1M:hover, .buttonM:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    background-color: rgba(255,255,255, 0.2);
+}
+.buttonM:focus ~ .ulM {
+    height: 300px;
+}
+@media (max-width: 700px) {
+    .navM, .ulM {
+        flex-direction: column;
+    }
+    .ulM {
+        text-align: center;
+        margin: 0;
+        height: 0;
+    }
+    .navM{
+        padding: 0;
+        align-items: flex-start;
+    }
+    .h1M {
+        margin: 10px;
+    }
+    .buttonM {
+        display: flex;
+    }
+    .liM, .ulM {
+        width: 100%;
+    }
+    .pM {
+        padding: 10px 20px;
+    }
+}
