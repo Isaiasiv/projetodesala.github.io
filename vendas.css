@@ -19,7 +19,7 @@
 }
 
 .background{
-    background-image: url("/imagens/fundo/fundomusic.png");
+    background-image: url(imagens/fundo/fundomusic.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
@@ -140,7 +140,7 @@ section h1{
 .cta{
     height: 60vh;
     width: 100%;
-    background: url("/imagens/fundo/clave.jpg");
+    background: url("imagens/fundo/clave.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
