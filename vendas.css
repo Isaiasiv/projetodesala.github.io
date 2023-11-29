@@ -15,7 +15,10 @@
 }
 .borda_letra {
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #000000;
+    -webkit-text-stroke-color: #3f3a3a;
+}
+.corBlack {
+    color: black;
 }
 
 .background{

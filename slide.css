@@ -32,7 +32,7 @@
 
 /* Define a cor de fundo de cada slide */
 .slide:nth-child(1) {
-    background-image: url("/imagens/slide/mesa.jpg");
+    background-image: url("imagens/slide/mesa.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -46,14 +46,14 @@
 }
 
 .slide:nth-child(3) {
-    background-image: url("/imagens/slide/julina.jpg");
+    background-image: url("imagens/slide/julina.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .slide:nth-child(4) {
-    background-image: url("/imagens/slide/banda.jpg");
+    background-image: url("imagens/slide/banda.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
