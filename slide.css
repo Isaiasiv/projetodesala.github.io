@@ -1,0 +1,123 @@
+/* Estilo para o conteúdo dos slides */
+.bodyslide {
+    font-family: Helvetica, sans-serif; /* Define a família da fonte */
+    padding: 5%; /* Adiciona preenchimento de 5% */
+    text-align: center; /* Centraliza o texto */
+    font-size: 2em; /* Talvez esteja faltando a unidade, por exemplo, font-size: 50px; */
+}
+
+
+/* Estilo da área dos slides */
+#slideshow {
+    overflow: hidden;
+    height: 510px;
+    width: 728px;
+    margin: 0 auto; /* Centraliza o slideshow horizontalmente */
+}
+
+/* Estilo de cada slide com largura e altura fixas */
+.slide {
+    float: left; /* Alinha os slides à esquerda */
+    height: 510px; /* Define a altura do slide */
+    width: 728px; /* Define a largura do slide */
+}
+
+/* Adiciona animação aos slides */
+.slide-wrapper {
+    /* Calcula a largura total com base no número de slides */
+    width: calc(728px * 4);
+    /* Especifica a animação com duração e velocidade */
+    animation: slide 20s ease infinite;
+}
+
+/* Define a cor de fundo de cada slide */
+.slide:nth-child(1) {
+    background-image: url("/imagens/slide/mesa.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slide:nth-child(2) {
+    background-image: url("https://img.freepik.com/fotos-gratis/foto-de-grande-angular-de-uma-unica-arvore-crescendo-sob-um-ceu-nublado-durante-um-por-do-sol-cercado-por-grama_181624-22807.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slide:nth-child(3) {
+    background-image: url("/imagens/slide/julina.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slide:nth-child(4) {
+    background-image: url("/imagens/slide/banda.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* Define a animação para o slideshow */
+@keyframes slide {
+    /* Calcula a margin-left para cada slide em diferentes porcentagens de keyframes */
+    20% {
+        margin-left: 0px;
+    }
+
+    40% {
+        margin-left: calc(-728px * 1);
+    }
+
+    60% {
+        margin-left: calc(-728px * 2);
+    }
+
+    80% {
+        margin-left: calc(-728px * 3);
+    }
+}
+@media (max-width: 700px) {
+    #slideshow {
+        overflow: hidden;
+        height: 240px;
+        width: 320px;
+        margin: 0 auto; /* Centraliza o slideshow horizontalmente */
+    }
+
+    /* Estilo de cada slide com largura e altura fixas */
+    .slide {
+        float: left; /* Alinha os slides à esquerda */
+        height: 240px; /* Define a altura do slide */
+        width: 320px; /* Define a largura do slide */
+    }
+
+    /* Adiciona animação aos slides */
+    .slide-wrapper {
+        /* Calcula a largura total com base no número de slides */
+        width: calc(320px * 4);
+        /* Especifica a animação com duração e velocidade */
+        animation: slide 20s ease infinite;
+    }
+    @keyframes slide {
+        /* Calcula a margin-left para cada slide em diferentes porcentagens de keyframes */
+        20% {
+            margin-left: 0px;
+        }
+
+        40% {
+            margin-left: calc(-320px * 1);
+        }
+
+        60% {
+            margin-left: calc(-320px * 2);
+        }
+
+        80% {
+            margin-left: calc(-320px * 3);
+        }
+    }
+
+
+}
+

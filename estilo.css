@@ -1,0 +1,111 @@
+
+/* Define um estilo base para todos os elementos, removendo margens e preenchimentos padrão */
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+
+    height: 100vh;
+    margin: 0;
+    transition: background 0.2s linear;
+}
+body.dark {
+    background: #000000;
+}
+.modo_escuro {
+    position: fixed;
+    top: 10px;
+    left: 80%;
+}
+
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.label {
+    background-color: #111;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 5px;
+    position: relative;
+    height: 26px;
+    width: 50px;
+    transform: scale(1.5);
+
+}
+
+
+.label .ball {
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 22px;
+    width: 22px;
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+    transform: translateX(26px);
+}
+
+.fa-moon {
+    color: #f1c40f;
+}
+
+.fa-sun {
+    color: #f39c12;
+}
+.color_txt{
+    color: #c56c6c;
+    .txtwhite & {
+        color: aliceblue;
+    }
+    .txtred & {
+        color: #ee0202;
+    }
+    .txtcyan & {
+        color: cyan;
+    }
+    .txtgrey & {
+        color: grey;
+    }
+}
+.txt_azul{
+    color: cyan;
+}
+
+.medidasFundo {
+    padding: 20px;
+    border-radius: 10px;
+    min-width: 250px;
+    max-width:80%;
+    margin: auto;
+}
+.fundo_claro {
+    background-color: #da7f7f;
+    padding: 0px;
+}
+#centro {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
